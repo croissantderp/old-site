@@ -1,0 +1,109 @@
+@font-face {
+    font-family: bungeeShade;
+    src: url("./assets/BungeeShade-Regular.ttf");
+}
+
+@font-face {
+    font-family: bungeeInline;
+    src: url("./assets/BungeeInline-Regular.ttf");
+}
+
+@font-face {
+    font-family: bungee;
+    src: url("./assets/Bungee-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: quicksand;
+    src: url("./assets/Quicksand-VariableFont_wght.ttf");
+}
+
+
+body {
+    background-image: url("./assets/background.svg");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    font-family: quicksand;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+#menu {
+    display: flex;
+    z-index: 2;
+    background-color: black;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+    #menu a {
+        font-family: bungeeShade;
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        line-height: 200%;
+    }
+
+    #menu a:hover {
+        color: darkgray;
+    }
+
+#about {
+    margin-top: 85vh;
+    width: 100vw;
+    height: 2000px;
+    max-height: 1098px;
+    background-image: url("./assets/balls.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: center;
+}
+
+#balls {
+    height: 100%;
+    max-height: 1098px;
+    max-width: 1700px;
+    background-image: url("./assets/balls.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+    #balls p.header {
+        position: absolute;
+        font-family: bungee;
+        font-size: clamp(1.5rem, 5.5vw, 6rem);
+        color: white;
+        left: 30.5%;
+        top: -1%;
+        width: auto;
+    }
+
+    #balls p.bubble1 {
+        position: absolute;
+        font-size: clamp(0.5rem, 2vw, 2rem);
+        color: white;
+        left: 20%;
+        padding-top: 25%;
+        width: 25%;
+        max-width: 425px;
+    }
+
+    #balls p.bubble2 {
+        position: absolute;
+        font-size: clamp(0.25rem, 1.5vw, 1.5rem);
+        color: white;
+        margin-left: 2%;
+        padding-top: 45%;
+        width: 15%;
+        max-width: 350px;
+    }
