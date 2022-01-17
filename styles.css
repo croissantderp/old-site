@@ -60,7 +60,7 @@ body {
 #home {
     z-index: -1;
     width: 100vw;
-    height: 30vh;
+    height: 30vw;
     /*background-image: url("./assets/lights.svg#svgView(preserveAspectRatio(none))");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -68,10 +68,9 @@ body {
 }
 
 #square {
+    margin-top: 30%;
     margin-left: 10vw;
-    margin-top: 5vh;
     width: 80vw;
-    height: 40vh;
 }
 
 #col1 {
@@ -103,7 +102,7 @@ body {
     }
 
 #about {
-    top: 45vh;
+    margin-top: 10vh;
     z-index: 2;
     width: 100vw;
     height: 1200px;
@@ -174,6 +173,7 @@ body {
 
 #projects {
     position: relative;
+    top: calc(-1000px + 35vw);
 }
 
     #projects p.header {
@@ -197,18 +197,34 @@ body {
             width: 500px;
             height: 500px;
             margin: 10px;
+            line-height: 0;
         }
+            #projects div div div {
+                line-height: normal;
+                background: none;
+                position: absolute;
+                width: 230px;
+                height: 480px;
+                margin: 10px;
+            }
 
-        #projects div div p.header {
-            text-align: left;
-            color: black;
-            font-family: quicksand;
-            font-size: 2rem;
-            margin-left: 20px;
-            margin-bottom: 0;
-        }
+                #projects div div div p.header {
+                    text-align: left;
+                    color: black;
+                    font-family: quicksand;
+                    font-size: 2rem;
+                    margin-left: 0;
+                    margin-bottom: 0;
+                }
 
-        #projects div div p {
-            margin-top: 10px;
-            margin-left: 20px;
-        }
+                #projects div div div p {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    width: 95%;
+                }
+
+            #projects div div img {
+                width: 50%;
+                margin: 0;
+                margin-left: 50%;
+            }
