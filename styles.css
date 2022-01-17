@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: bungeeOutline;
+    src: url("./assets/BungeeOutline-Regular.ttf");
+}
+
+@font-face {
     font-family: bungee;
     src: url("./assets/Bungee-Regular.ttf");
 }
@@ -27,12 +32,12 @@ body {
     font-family: quicksand;
     overflow-x: hidden;
     margin: 0;
-    height: 100%;
+    height: 400vh;
 }
 
 #menu {
     display: flex;
-    z-index: 2;
+    z-index: 3;
     background-color: black;
     height: 50px;
     position: sticky;
@@ -41,25 +46,66 @@ body {
 }
 
     #menu a {
-        font-family: bungeeShade;
-        font-size: 24px;
+        font-family: bungee;
+        font-size: 36px;
         color: white;
         text-decoration: none;
         margin-left: 10px;
         margin-right: 10px;
-        height: 100%;
-        line-height: 200%;
     }
 
-    #menu a:hover {
-        color: darkgray;
+        #menu a:hover {
+            color: #922300;
+        }
+
+#home {
+    z-index: -1;
+    width: 100vw;
+    height: 30vh;
+    /*background-image: url("./assets/lights.svg#svgView(preserveAspectRatio(none))");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position-x: center;*/
+}
+
+#square {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    width: 80vw;
+    height: 40vh;
+}
+
+#col1 {
+    position: absolute;
+    width: 30vw;
+}
+
+    #col1 p.header {
+        text-align: right;
+        font-size: clamp(1.5rem, 5.5vw, 5rem);
+        margin: 0;
+        color: #696969;
+    }
+
+#col2 {
+    position: absolute;
+    left: 40vw;
+    width: 40vw;
+}
+
+    #col2 p.name-header {
+        text-align: left;
+        font-size: clamp(1.5rem, 5.5vw, 5rem);
+        margin: 0;
+        color: white;
     }
 
 #about {
-    margin-top: 85vh;
+    top: 45vh;
+    z-index: 2;
     width: 100vw;
-    height: 2000px;
-    max-height: 1098px;
+    height: 1200px;
+    max-height: 1200px;
     background-image: url("./assets/balls.svg");
     background-size: contain;
     background-repeat: repeat-x;
@@ -68,7 +114,8 @@ body {
 
 #balls {
     height: 100%;
-    max-height: 1098px;
+    width: 100%;
+    max-height: 1200px;
     max-width: 1700px;
     background-image: url("./assets/balls.svg");
     background-size: contain;
@@ -80,30 +127,87 @@ body {
 
     #balls p.header {
         position: absolute;
-        font-family: bungee;
+        font-family: bungeeOutline;
         font-size: clamp(1.5rem, 5.5vw, 6rem);
         color: white;
         left: 30.5%;
-        top: -1%;
+        margin-top: 5%;
+        padding-top: 0;
         width: auto;
     }
 
-    #balls p.bubble1 {
+    #balls div.bubble1 {
         position: absolute;
         font-size: clamp(0.5rem, 2vw, 2rem);
         color: white;
-        left: 20%;
-        padding-top: 25%;
+        left: 22%;
+        margin-top: 27%;
         width: 25%;
         max-width: 425px;
     }
 
-    #balls p.bubble2 {
+    #balls div.bubble2 {
         position: absolute;
-        font-size: clamp(0.25rem, 1.5vw, 1.5rem);
+        font-size: clamp(0.5rem, 1.5vw, 1.5rem);
         color: white;
-        margin-left: 2%;
-        padding-top: 45%;
+        left: 53%;
+        margin-top: 32%;
+        width: 20%;
+        max-width: 375px;
+    }
+
+    #balls div.bubble3 {
+        position: absolute;
+        font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+        color: white;
+        left: 2%;
+        margin-top: 45%;
         width: 15%;
         max-width: 350px;
     }
+
+        #balls div.bubble3 a {
+            color: #ED8030;
+        }
+
+#projects {
+    position: relative;
+    top: -30vh;
+}
+
+    #projects p.header {
+        font-family: bungeeOutline;
+        font-size: clamp(1.5rem, 5.5vw, 6rem);
+        color: white;
+        text-align: center;
+    }
+
+    #projects div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        #projects div div {
+            display: block;
+            justify-content: left;
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            margin: 10px;
+        }
+
+        #projects div div p.header {
+            text-align: left;
+            color: black;
+            font-family: quicksand;
+            font-size: 2rem;
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
+
+        #projects div div p {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
