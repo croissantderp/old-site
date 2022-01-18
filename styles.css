@@ -181,6 +181,7 @@ body {
         font-size: clamp(1.5rem, 5.5vw, 6rem);
         color: white;
         text-align: center;
+        margin-bottom: 0;
     }
 
     #projects div {
@@ -193,7 +194,7 @@ body {
         #projects div div {
             display: block;
             justify-content: left;
-            background-color: white;
+            background-color: #FFFFFF;
             width: 500px;
             height: 500px;
             margin: 10px;
@@ -227,4 +228,28 @@ body {
                 width: 50%;
                 margin: 0;
                 margin-left: 50%;
+                
             }
+
+#buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+    #buttons button {
+        font-family: quicksand;
+        font-size: 1rem;
+        border: none;
+        background-color: white;
+        height: 50px;
+        margin: 5px;
+    }
+
+        #buttons button:hover {
+            background-color: #FFFFFFD0;
+        }
+
+.highlight {
+    background-color: #FFFFFF70 !important;
+}

@@ -7,6 +7,8 @@
 
     <script src="jquery-3.6.0.min.js"></script>
 
+    <script src="browse.js"></script>
+
     <link href="./styles.css" rel="stylesheet" />
 
     <title>croissantderp</title>
@@ -97,8 +99,27 @@
         <p class="header">
             projects
         </p>
-        <div>
-            <div>
+
+        <div id="buttons">
+            <button class="all" onclick="all_()">
+                All
+            </button>
+            <button class="spt" onclick="spt()">
+                Spotlight
+            </button>
+            <button class="eng" onclick="eng()">
+                Engineering
+            </button>
+            <button class="com" onclick="com()">
+                Computer Science
+            </button>
+            <button class="art" onclick="art()">
+                Art
+            </button>
+        </div>
+
+        <div id="neverGonnaGiveYouUp">
+            <div class="eng spt">
                 <div>
                     <p class="header">Lab Equipment</p>
                     <p>A collection of 3d printable alternatives to lab equipment. Includes, a fish feeder, a petri dish holder, a fish embryo box, a fridge shutter, and an agar imprinter.</p>
@@ -110,7 +131,7 @@
                 <img src="./assets/agar.png" alt="Agar imprinter with handle on backside" />
             </div>
 
-            <div>
+            <div class="art spt">
                 <div>
                     <p class="header">The Gecko Collection</p>
                     <p>A collaborative art project created by my friends and I. Many other of my computer science projects are related to this.</p>
@@ -122,7 +143,7 @@
                 <img src="./assets/mima.png" alt="An example of a gecko I drew" />
             </div>
 
-            <div>
+            <div class="art com">
                 <div>
                     <p class="header">Gecko Collection Software Projects</p>
                     <p>A fully functional website and locally-hosted API backend for the Gecko Collection</p>
@@ -143,7 +164,7 @@
                 <img src="./assets/geckosapi.png" alt="The default response sent by the api" />
             </div>
 
-            <div>
+            <div class="com spt">
                 <div>
                     <p class="header">Well Chess but Actually No</p>
                     <p>A collaborative project with friends for the hackathon GunnHacks 7.0.</p>
@@ -161,7 +182,7 @@
                 <img src="./assets/chess2,1.png" alt="A gameplay screenshot"/>
             </div>
 
-            <div>
+            <div class="com">
                 <div>
                     <p class="header">Geckobot</p>
                     <p>A discord bot with tts, emote, and gecko collection features.</p>
@@ -173,7 +194,7 @@
                 <img src="./assets/geckobotinfo.png" alt="A screenshot of the bot in action"/>
             </div>
 
-            <div>
+            <div class="com">
                 <div>
                     <p class="header">TheWard</p>
                     <p>A schedule app for my school I created for personal use.</p>
@@ -189,7 +210,7 @@
                 <img src="./assets/wardEx.png" alt="A screenshot of the schedule feature"/>
             </div>
 
-            <div>
+            <div class="eng">
                 <div>
                     <p class="header">Shoulder Rest</p>
                     <p>A replacement shoulder rest for the <a href="https://usa.yamaha.com/products/musical_instruments/strings/electric_strings/yev-105/index.html">YEV-105 electric violin</a>.</p>
@@ -212,7 +233,7 @@
 
             <div>
                 <div>
-                    <p class="header">foo</p>
+                    <p class="header">bar</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam donec adipiscing tristique risus nec feugiat in fermentum. Arcu vitae elementum curabitur vitae nunc sed. Ultricies mi eget mauris pharetra et ultrices neque ornare. Tempus egestas sed sed risus pretium.</p>
                 </div>
                 <img src="./assets/000_generic.png" />
