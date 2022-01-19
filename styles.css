@@ -200,6 +200,7 @@ body {
             margin: 10px;
             line-height: 0;
         }
+
             #projects div div div {
                 line-height: normal;
                 background: none;
@@ -224,11 +225,35 @@ body {
                     width: 95%;
                 }
 
+                #projects div div div.image {
+                    position: relative;
+                    display: block;
+                    justify-content: left;
+                    width: 250px;
+                    height: 250px;
+                    margin-left: 250px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    line-height: 0;
+                }
+
+                #projects div div div div.cover {
+                    width: 250px;
+                    height: 250px;
+                    margin: 0;
+                    background-color: #FFFFFF50;
+                }
+
+                #projects div div div div.cover:hover {
+                    width: 250px;
+                    height: 250px;
+                    margin: 0;
+                    background-color: #FFFFFF00;
+                }
+
             #projects div div img {
-                width: 50%;
+                width: 250px;
                 margin: 0;
-                margin-left: 50%;
-                
             }
 
 #buttons {
