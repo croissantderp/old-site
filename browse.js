@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () { initiate(); });
 
 var defaultQuery = "all";
+var currentQuery = defaultQuery;
 var buttons;
 var list;
 
@@ -16,22 +17,40 @@ function all_() {
 }
 
 function spt() {
+    if (currentQuery == "spt") {
+        render("all")
+        return;
+    }
     render("spt");
 }
 
 function eng() {
+    if (currentQuery == "eng") {
+        render("all")
+        return;
+    }
     render("eng");
 }
 
 function com() {
+    if (currentQuery == "com") {
+        render("all")
+        return;
+    }
     render("com");
 }
 
 function art() {
+    if (currentQuery == "art") {
+        render("all")
+        return;
+    }
     render("art");
 }
 
 function render(query = "") {
+
+    currentQuery = query;
 
     if (query == "all") {
         for (var i = 0; i < list.length; i++) {
