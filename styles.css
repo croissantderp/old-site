@@ -36,7 +36,7 @@ body {
 #menu {
     display: flex;
     z-index: 3;
-    background-color: black;
+    background-color: #1E1E24;
     height: clamp(5px, 5vw, 48px);
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@ body {
 }
 
     #menu a {
-        font-family: bungee;
+        font-family: quicksand;
         font-size: clamp(1rem, 3vw, 24px);
         color: white;
         text-decoration: none;
@@ -170,8 +170,9 @@ body {
         color: white;
         left: 30.5%;
         margin-top: 5%;
-        padding-top: 0;
+        padding-top: 3.5%;
         width: auto;
+        line-height: clamp(1rem, 5.5vw, 3.5rem);
     }
 
     #balls div.bubble1 {
@@ -203,10 +204,10 @@ body {
         font-size: clamp(0.23rem, 1.5vw, 1rem);
         text-align: center;
         color: white;
-        left: 4%;
+        left: 2%;
         margin-top: 45%;
-        width: 15%;
-        max-width: 350px;
+        width: 20%;
+        max-width: 400px;
     }
 
         #balls div.bubble3 a {
@@ -216,7 +217,7 @@ body {
 
 #projects {
     position: relative;
-    top: calc(-500px + 25vw);
+    top: calc(-400px + 25vw);
 }
 
     #projects p.header {
@@ -224,7 +225,8 @@ body {
         font-size: clamp(1rem, 5.5vw, 3.5rem);
         color: white;
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 10px;
+        line-height: clamp(1rem, 5.5vw, 3.5rem);
     }
 
     #projects div {
@@ -238,56 +240,69 @@ body {
             display: block;
             justify-content: left;
             background-color: #FFFFFF;
-            width: 500px;
-            height: 500px;
+            width: 250px;
+            height: 400px;
             margin: 10px;
             line-height: 0;
+            border-radius: 15px;
         }
 
             #projects div div div {
+                position: absolute;
                 line-height: normal;
                 background: none;
-                position: absolute;
+                margin: 5px;
+                height: unset;
                 width: 230px;
-                height: 480px;
-                margin: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
             }
 
                 #projects div div div p.header {
                     text-align: left;
+                    line-height: 2rem;
                     color: black;
                     font-family: quicksand;
-                    font-size: 2rem;
-                    margin-left: 0;
-                    margin-bottom: 0;
+                    font-size: 1.5rem;
+                    margin: 5px;
                 }
 
                 #projects div div div p {
-                    margin-top: 10px;
-                    margin-left: 0;
+                    font-size: 12px;
+                    margin: 0;
+                    margin-top: 5px;
+                    margin-left: 5px;
                     width: 95%;
                 }
 
+                #projects div div div a {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+
                 #projects div div div.image {
-                    position: relative;
+                    position: absolute;
+                    overflow-y: hidden; /* scroll for more than one */
+                    overflow-x: hidden;
                     display: block;
-                    justify-content: left;
                     width: 250px;
                     height: 250px;
-                    margin-left: 250px;
-                    margin-top: 0;
-                    margin-bottom: 0;
+                    margin: 0;
+                    margin-top: 150px;
                     line-height: 0;
+                    clip-path: polygon(0 0, 300px 0, 300px 300px, 0 300px);
                 }
 
             #projects div div img {
+                position: relative;
+                float: left;
                 width: 250px;
                 margin: 0;
                 filter: grayscale(1);
                 transition: .5s ease-in-out;
             }
 
-            #projects div div img:hover {
+            #projects div div div.image:hover > img {
                 filter: none;
             }
 
@@ -316,6 +331,6 @@ body {
         }
 
 .highlight {
-    background-color: #000000 !important;
+    background-color: #1E1E24 !important;
     color: white;
 }
