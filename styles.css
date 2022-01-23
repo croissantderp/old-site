@@ -275,9 +275,22 @@ body {
                     width: 95%;
                 }
 
+                    #projects div div div p a {
+                        font-size: 12px;
+                        margin-left: 0;
+                    }
+
                 #projects div div div a {
                     font-size: 12px;
-                    margin-left: 5px;
+                    padding: 2.5px;
+                    margin: 2.5px;
+                    border-radius: 5px;
+                    color: #5100ff;
+                    transition: .25s ease-in-out;
+                }
+
+                #projects div div div a:hover {
+                    background-color: #00000030;
                 }
 
                 #projects div div div.image {

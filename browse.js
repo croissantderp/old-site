@@ -16,14 +16,6 @@ function all_() {
     render("all");
 }
 
-function spt() {
-    if (currentQuery == "spt") {
-        render("all")
-        return;
-    }
-    render("spt");
-}
-
 function eng() {
     if (currentQuery == "eng") {
         render("all")
